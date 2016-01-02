@@ -1,13 +1,5 @@
 package geom
 
-// abs returns the absolute value of an int
-func abs(n int) int {
-	if n < 0 {
-		return -n
-	}
-	return n
-}
-
 // Point represents a point in 2 dimensional Euclidean space
 type Point struct {
 	X, Y int
