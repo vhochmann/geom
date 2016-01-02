@@ -9,7 +9,7 @@ func NewLine(p1, p2 Point) Line {
 }
 
 // Points is an implementation of Bresenham's Line Algorithm, copied
-// directly from roguebasin.com. It returns all points line
+// directly from roguebasin.com. It returns all points in a line
 func (l Line) Points() (points []Point) {
 	x1, y1 := l.P1.X, l.P1.Y
 	x2, y2 := l.P2.X, l.P2.Y
