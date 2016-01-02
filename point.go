@@ -43,7 +43,7 @@ func (p Point) Mid(other Point) Point {
 	return p.Add(other).Div(Pt(2,2))
 }
 
-// Dist returns the Euclidean distance between two points
+// Dist returns the *relative* Euclidean distance between two points
 func (p Point) Dist(other Point) (out int) {
 	var res Point
 	res = other.Sub(p)
